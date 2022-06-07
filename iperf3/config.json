@@ -5,6 +5,7 @@
   "description": "Network Speed Test using IPerf3",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "before",
+  "init": "false",
   "boot": "auto",
   "options": {},
   "schema": {},

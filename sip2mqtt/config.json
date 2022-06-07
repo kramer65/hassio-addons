@@ -4,6 +4,7 @@
   "slug": "sip2mqtt",
   "description": "A SIP monitoring script that publishes incoming calls with CallerID to an MQTT channel",
   "startup": "services",
+  "init": "false",
   "boot": "auto",
   "options": { 
     "mqttadress": "core_mosquitto",

@@ -4,6 +4,7 @@
   "slug": "snapcastclient",
   "description": "Snapcast client",
   "startup": "services",
+  "init": "false",
   "boot": "auto",
   "audio": true,
   "options": { 

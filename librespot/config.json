@@ -4,6 +4,7 @@
   "slug": "librespot",
   "description": "spotify",
   "startup": "services",
+  "init": "false",
   "boot": "auto",
   "map": ["share:rw"],
   "host_network": true,
