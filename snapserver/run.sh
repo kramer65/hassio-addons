@@ -1,5 +1,7 @@
 #!/usr/bin/env bashio
 
+bashio::log.info "updated file!"
+
 mkdir -p /share/snapfifo
 mkdir -p /share/snapcast
 
@@ -21,6 +23,10 @@ echo "buffer = $(bashio::config 'stream.buffer')" >> "${config}"
 echo "codec = $(bashio::config 'stream.codec')" >> "${config}"
 echo "send_to_muted = $(bashio::config 'stream.send_to_muted')" >> "${config}"
 echo "sampleformat = $(bashio::config 'stream.sampleformat')" >> "${config}"
+
+bashio::log.info "Echo the config as it is after the stream stuff"
+bashio::log.info "${config}"
+bashio::log.info `cat ${config}`
 
 echo "[http]" >> "${config}"
 echo "enabled = $(bashio::config 'http.enabled')" >> "${config}"
