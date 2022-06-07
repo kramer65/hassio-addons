@@ -4,6 +4,7 @@
   "slug": "snapcastserver",
   "description": "Snapcast Server",
   "startup": "system",
+  "init": "false",
   "boot": "auto",
   "map": ["share:rw"],
   "options": { 
